@@ -5,9 +5,6 @@ import 'angular-sanitize';
 import 'angular-aria';
 import 'angular-animate';
 import 'angular-material';
-    // <script src="/node_modules/angular-animate/angular-animate.js"></script>
-    // <script src="/node_modules/angular-material/angular-material.js"></script>
-
 
 // main scss
 import '../sass/app.scss';
@@ -15,10 +12,10 @@ import '../sass/app.scss';
 import app from './app';
 // Controllers
 import IndexController from './controllers/IndexController';
-// Directives
-import SvgDirective from './directives/svg-directive';
-// Tempates
+// Templates
 import IndexTpl from '../templates/index.tpl.html';
+// Directives
+
 
 
 app.config(function($locationProvider, $routeProvider, $compileProvider) {
@@ -27,7 +24,6 @@ app.config(function($locationProvider, $routeProvider, $compileProvider) {
 
     $locationProvider.html5Mode(false);
     $locationProvider.hashPrefix('');
-    console.log('ajskdbaidjbkad');
 
     $routeProvider.when('/', {
         templateUrl: IndexTpl,
@@ -35,7 +31,6 @@ app.config(function($locationProvider, $routeProvider, $compileProvider) {
     })
 
 });
-
 
 // initial run + setup
 app.run(($rootScope) => {

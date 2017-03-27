@@ -16,7 +16,7 @@
       "s3": {
         "cache": false,
         "overwrite": true,
-        "region": "us-east-1",
+        "region": "us-west-1",
         "sslEnabled": true
       }
     }
